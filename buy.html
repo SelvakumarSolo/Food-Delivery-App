@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery App</title>
+  <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <div id="container" class="container">
+  <h1>YOUR CART IS WAITING!BOOK NOW</h1>
+  
+  <form id="orderForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+    <label for="paymentMethod">Payment Method:</label><br>
+    <select id="paymentMethod" name="paymentMethod">
+      <option value="COD">Cash on Delivery</option>
+      <option value="UPI">UPI</option>
+    </select><br><br>
+    
+    <button type="submit" id="buyNowButton">Buy Now</button>
+  </form>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Find the Buy Now button element
+    const buyNowButton = document.getElementById('buyNowButton');
+  
+    // Add a click event listener to the button
+    buyNowButton.addEventListener('click', function() {
+      // Replace this alert with your actual buy now functionality
+      alert('Your order has been placed!');
+    });
+  });
+  
+  </script>
+  </div>
+</body>
+</html>
